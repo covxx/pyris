@@ -29,13 +29,23 @@ def verison():
 #Score write system
 def scoring():
     with open ("score.txt", "a") as es: #opens score keeping
-        print ("==================")
-        print ("==================")
-        n4s = raw_input("Whats your name?: ")
-        print(score,n4s,  file = es) #prints score to file
+        if lose==y:
+            print ("==================")
+            print ("==================")
+            n4s = raw_input("Oh no you lost, what's your name?: ")
+            print(score,n4s,  file = es) #prints score to file
 def play():
     ##scoring()
     print ("hey this works")
+
+
+#def SaveEvent(data):
+def HandleEvent(data):
+    global lastsave
+    if time.time() - lastsave > 0: 
+    # this is in seconds, so 5 minutes = 300 seconds
+        lastsave = time.time()
+        SaveEvent(data)
 #======================== MENU ========================
 def menu():
     while True:
@@ -70,7 +80,7 @@ def menu():
 #======================== MENU END===================
 verison()
 menu()
-play()
+##play()
 
 
 
