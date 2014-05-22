@@ -24,7 +24,7 @@ pygame.mixer.music.load('theme.ogg')
 pygame.mixer.music.play()
 #==============Functions============
 #Verison output
-def verison():
+def ver():
     print (ver, "Made by covxx & primitive")
 #Score write system
 def scoring():
@@ -57,7 +57,7 @@ def menu():
         window.blit(title,titlepos)
         losetextfont.set_underline(False)
         losetextfont.set_bold(False)
-        playbutton=losetextfont.render('PLAY',1,(255,255,255),(0,102,153))
+        playbutton=losetextfont.render('PLAY',1,(255,255,255),(200,0,0))
         playbuttonpos=playbutton.get_rect(center=(300,350))
         window.blit(playbutton,playbuttonpos)
         pygame.draw.rect(window,(0,0,0),playbuttonpos,3)
@@ -77,7 +77,7 @@ def menu():
                 elif inspos.collidepoint(event.pos):
                     instructions()
 #======================== MENU END===================
-verison()
+ver()
 menu()
 ##play()
 
