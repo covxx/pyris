@@ -1,6 +1,4 @@
 #TETRIS ALPHA
-#CHRISTIAN JENSEN & Robert Pallante
-#CHANGELOG IN FOLDER
 from __future__ import print_function
 import pygame, sys, random, time
 from pygame.locals import *
