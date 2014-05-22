@@ -35,10 +35,9 @@ def scoring():
             n4s = raw_input("Oh no you lost, what's your name?: ")
             print(score,n4s,  file = es) #prints score to file
 def play():
-    ##scoring()
-    print ("hey this works")
+    scoring()
 
-
+#time handling 
 #def SaveEvent(data):
 def HandleEvent(data):
     global lastsave
@@ -63,7 +62,7 @@ def menu():
         window.blit(playbutton,playbuttonpos)
         pygame.draw.rect(window,(0,0,0),playbuttonpos,3)
         pygame.draw.rect(window,(0,0,0),playbuttonpos,3)
-        version=scoretextfont.render('Version: Alpha ', 1, (0,0,0))
+        version=scoretextfont.render('Alpha', 1, (0,0,0))
         versionpos=version.get_rect(left=0, bottom=600)
         window.blit(version,versionpos)
         pygame.display.update()
