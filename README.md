@@ -19,5 +19,8 @@ A1: 9:53 AM 5/20/2014
 	Block images made
 	Logz started
 	block logz 
-	
+
+A2: 9:48 AM 5/23/2014
+	Beginning to create shapes, have to add individual functions
+	Will probably use an array-backed grid to place
 	
